@@ -102,17 +102,7 @@ add_action( 'wp_head', 'do_activate_header' );
  *
  * @since MU (3.0.0)
  */
-function wpmu_activate_stylesheet() {
-	?>
-	<style type="text/css">
-		form { margin-top: 2em; }
-		#submit, #key { width: 90%; font-size: 24px; }
-		#language { margin-top: .5em; }
-		.error { background: #f66; }
-		span.h3 { padding: 0 8px; font-size: 1.3em; font-weight: 600; }
-	</style>
-	<?php
-}
+
 add_action( 'wp_head', 'wpmu_activate_stylesheet' );
 add_action( 'wp_head', 'wp_sensitive_page_meta' );
 
